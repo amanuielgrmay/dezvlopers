@@ -1,0 +1,417 @@
+html{
+	scroll-behavior:smooth;
+}
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+
+
+.header{
+	width:100%;
+	height:100vh;  
+	background:url('y.jpg') no-repeat;
+	background-size:100% 100%;
+	
+	position:relative; 
+}
+.header::before{
+	content:"";
+	position:absolute;
+	top:0%;
+	bottom:0%;
+	left:0;
+	right:0;
+	opacity:.3 !important;
+	z-index:-1; 
+ 
+}
+.nav-item a:hover{
+  color:white;
+  font-weight:bold;
+  font-family:sans-serif;
+}
+a{
+	text-decoration:none; 
+}
+.center-div {
+	width:100%;
+	position:relative;
+	top:200px;
+	font-size:3vh;
+	color:#000;
+	padding:40px;  
+	line-height:3;
+}
+.center-div h1{
+	text-align:center;
+}
+.header-buttons{
+	text-align:center;
+
+}
+.header-buttons a{
+	border:1px solid #fff;
+	border-radius:100px;
+	margin:0 10px;
+	padding:0px 38px;
+	outline:none;
+	text-align:center;
+	font-size:1.5rem;
+	color:#000;
+	border-color:#000;  
+}
+.header-buttons a:hover{
+	text-decoration:none;
+	background-color:#fff;
+	color:#000;
+	box-shadow:0px 0px 20px 0px; 
+}
+
+li{
+	list-style:none;
+}
+.header p{
+ font-weight:400;
+ line-height:1.6;
+ font-size:1.4rem;
+ text-align:center; 
+ color:#002;
+}
+.header-extradiv{
+	width:100%;
+	height:auto;
+	border:1px solid;
+	padding:250px;
+	border-top-color:white; 
+	margin:20px 0px;
+	margin-top:-3px; 
+	display:inline-block;
+}
+.extra-div{
+	background-color:#fff;
+	border:medium none;
+	padding:40px !important;
+	border-radius:3px;
+	text-align:center;
+	margin:30px;
+	transition:0.3s;
+}
+.extra-div p{
+		font-size:1.1rem;
+}
+.extra-div h2{
+	font-size:1.3rem;
+	margin:20px 0 15px 20px;
+	font-weight:bold;
+	line-height:1.1;
+	word-spacing:4px;
+}
+.extra-div:hover{
+	box-shadow:0px 0px 20px 0px;
+	transform:translateY(-20px); 
+}
+/*    section what we offer     */
+.rows{
+	margin-top:80px;
+	border:solid;
+     margin:30px 40px;
+	padding:30px;
+	text-align:center;
+	transition:.3s;
+}
+.rows h1{
+	font-size:1.4rem;
+}
+.rows img{
+	padding:20px;
+	height:120px;
+	position:relative;
+	left:30px; 
+}
+.serviceoffer{
+  margin:-20px 0px;
+  width:100%;
+  border:1px solid;
+  border-top-color:white;
+  padding:160px;
+  height:auto;
+}
+.serviceoffer p{
+	line-height:30px;
+	font-size:1.1rem;
+}
+.rows:hover{
+	box-shadow:0px 0px 20px 0px;
+	transform:translateY(-20px);
+	border:none;
+}
+.serviceoffer .p{
+	font-size:1.4rem;
+}
+/* pricing startsssssssssss hereeeeeee*/
+.pricing{
+	width:100%;
+	height:auto;
+	border:1px solid;
+	border-top-color:white;
+	padding:80px;
+	margin:19px 0px;
+	position:relative;
+}
+@media only screen and (max-width: 1000px) {
+   .pricing{
+     padding:30px;
+  }
+  .serviceoffer{
+  	padding:30px;
+  }
+  .header-extradiv{
+  	padding:30px;
+  }
+  .header-extradiv h1{
+  	position:relative;
+  	top:40px;
+  }
+
+}
+@media only screen and (max-width: 610px){
+	.header{
+		height:120vh;
+	}
+	.aboutbtn{
+      padding:10px;
+	}
+	.contactbtn{
+
+	}
+}
+@media only screen and (max-width: 500px){
+	
+	.pricing{
+     padding:0px;
+  }
+  .serviceoffer{
+  	padding:0px;
+  }
+  .header-extradiv{
+  	padding:0px;
+  }
+  .pricing:before{
+	content:"";
+	position:absolute;
+	top:0%;
+	bottom:0%;
+	left:0;
+	right:0;
+	z-index:-1; 
+	background:linear-gradient(160deg, #16c9f6 75%,#fff 0);}
+}
+}
+.pricing:before{
+	content:"";
+	position:absolute;
+	top:0%;
+	bottom:0%;
+	left:0;
+	right:0;
+	z-index:-1; 
+	background:linear-gradient(160deg, #16c9f6 55%,#fff 0); 
+}
+.money{
+	color:#606060;
+	line-height:1;
+	font-size:40px;
+}
+.card{
+	transition:0.4s ease;
+	margin-top:40px;
+
+}
+.card:hover {
+	transform:translateY(-20px);
+	box-shadow:0px 0px 30px 0px;
+}
+.card:hover .card-header ,.card:hover .money {
+      color:#16c9f6; 
+	
+}
+.card-header{
+	font-size:1.6rem;
+	font-weight:bold;
+	background:#fff!important;
+	padding:25px; 
+}
+.card-body{
+	padding: 30px 0px!important;
+}
+.card-body li{
+   margin:10px 0;
+   font-weight:400;
+   font-size:20px;
+   line-height:1.6;
+   color:#606060;
+   padding:10px;
+
+}
+.card-footer{
+	background:white !important;
+	padding:30px 0px !important; 
+}
+.card-footer a{
+	border:1px solid #fff;
+	border-radius:100px;
+	margin:0 10px;
+	padding:10px 38px;
+	outline:none;
+	text-align:center;
+	font-size:1.5rem;
+	color:#000;
+	border-color:#000;
+	transition:.3s; 
+	  }
+.card-footer a:hover{
+	text-decoration:none;
+
+	background-color:#16c9f6;
+	color:#fff;
+	box-shadow:0px 0px 20px 0px,#16c9f6 ; 
+}
+/*----------------------clients pagegegege-------------*/
+.clients{
+	width:100%;
+	padding:130px 0px;
+	border:solid 1px;
+	height:auto;
+	margin:-20px 0px;
+	border-top-color:white; 
+	
+}
+.box{
+	text-align:center;
+	border:1px solid rgba(0,0,0,0.2);
+	box-shadow:0 5px 10px 0 rgba(0,0,0,.3);
+	border-radius:2px;
+	transition:.3s ease; 
+	padding:50px;
+}
+.box:hover{
+  background-color:#16c9f6; 
+}
+.box:hover p {
+	color:white;
+}
+.carousel-indicators{
+	position:absolute;
+	right:0;
+	bottom:-60px !important;
+}
+.carousel-indicators li{
+	background-color:#16c9f6 !important; 
+}
+.box a{
+	position:relative;
+
+}
+.box a img{
+	width:200px;
+	height:100px;
+	border-radius:50%;
+	margin-top:20px;
+}
+.box h1{
+	font-size:29px;
+	font-weight:700;
+	color:#000;
+	margin-bottom:10px;
+}
+.box h2{
+   font-size:15px;
+   font-weight:460;
+   color:#666666;
+   margin-bottom:20px; 
+}
+.carousel-control-prev a:hover{
+	color:#16c9f6 !important;
+}
+.headings h1{
+	font-size:40px !important;
+	font-family:serif;
+	font-weight:bold;
+	font-style:sans-serif;
+	text-transform:uppercase;
+}
+.contactus{
+	position:relative;
+	top:0px;
+	width:100%;
+	height:auto;
+	margin:20px 0px;
+	padding:220px 0px;
+	border:solid 1px;
+	border-top-color:white;  
+}
+textarea{
+	position:relative;
+	left:-20px;
+}
+.contactus:before{
+	content:"";
+	position:absolute;
+	top:0%;
+	bottom:0%;
+	left:0;
+	right:0; 
+	z-index:-1;
+	background:linear-gradient(330deg, #16c9f6 55%, #fff 0%);
+}
+::placeholder{
+	font-size:0.85; 
+}
+.contactus p{
+ font-size:1.2rem;
+ padding:8px;
+}
+.newsletter{
+   height:auto;
+   padding:60px 0px;
+}
+.ipg{
+	padding:40px 0px;
+	border-radius:20px 0px 0px 20px !important;
+
+}
+input .ipg{
+	height:50px; 
+}
+.footer{
+	width:100%;
+	height:auto;
+	margin-top:230px;
+	padding:70px 0px 70px 0;
+	background:#00abff;
+}
+.footer p{
+	color:white;
+
+}
+.footer li a{
+	font-size:0.9rem;
+	line-height:1.6;
+	font-weight:400;
+	color:#fff;
+	text-align:center;
+	text-transform:capitalize;
+}
+.footer-div{
+	margin:40px;
+}
+.justify-content-center{
+
+	position:relative;
+	top:70px;
+	text-align:center;
+	color:#000 !important;
+
+}
